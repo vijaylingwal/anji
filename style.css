@@ -1,0 +1,321 @@
+body{
+    background-image: url("https://images.unsplash.com/photo-1523754569648-43ccb845c9d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MzV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.header{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+}
+
+.main_logo{
+    width: 16rem;
+    height: 13rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.headsearch{
+    align-self: center;
+    margin-left: 18rem;
+}
+
+.searchbarone{
+    border: none;
+    width: 16rem;
+    height: 3rem;
+}
+
+.searchbartwo{
+    border: none;
+    width: 15rem;
+    height: 3rem;
+    margin-left: -0.2rem;
+}
+
+.topfindbtn{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    width: 5rem;
+    height: 3.2rem;
+    background-color: #CDF0EA;
+    margin-left: -5px;
+}
+
+
+.searchbarone:focus {
+    outline:none;
+    border:1px solid grey;
+  } 
+
+.searchbartwo:focus {
+    outline:none;
+    border:1px solid grey;
+} 
+
+
+.rightheadopt{
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    margin-left: 10rem;
+}
+
+.a_vendor{
+    text-decoration: none;
+    margin: 1rem;
+}
+.a_venues{
+    text-decoration: none;
+    margin: 1rem;
+}
+.a_events{
+    text-decoration: none;
+    margin: 1rem;
+}
+.a_signin{
+    text-decoration: none;
+    margin: 1rem;
+}
+.a_aboutus{
+    text-decoration: none;
+    margin: 1rem;
+}
+
+.bodycontentone{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #002366;
+    font-size: 1.7rem;
+}
+
+
+
+
+/* carousel starting */
+html, body{
+    margin:0; 
+    padding:0;
+    width:100%;
+    height:100%
+}
+
+
+input[type=radio]{
+    display: none;
+}
+ 
+
+.hotel_venue{
+    margin-left: 6rem;
+    width: 40%;
+    height: 50%;
+    max-width: 800px;
+    max-height: 600px;
+    display: flex;
+    transform-style: preserve-3d;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards{
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+.card{
+    position: absolute;
+    width: 45%;
+    height: 70%;
+    left: 0;
+    right: 0;
+    margin:auto;
+    padding-left: 1rem;
+    padding-top: 4rem;
+    cursor: pointer;
+    transition: transform 0.4s ease;   
+}
+
+
+img{
+    width: 95%;
+    height: 80%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+  
+#item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2{
+    transform: translatex(-40%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}
+  
+#item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1{
+    transform: translatex(40%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}
+  
+#item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3{
+    transform: translatex(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+}
+  
+#item-1:checked ~ .cards #song-1 img, #item-2:checked ~ .cards #song-2 img, #item-3:checked ~ .cards #song-3 img{
+   box-shadow: 0px 0px 5px 0px rgba(81, 81, 0.47);
+}
+
+/* carousel  ending*/
+
+.hotelvenue_content{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    margin-left: 56.3rem;
+    margin-top: -29.6rem;
+    width: 60%;
+    height: 50%;
+    max-width: 800px;
+    max-height: 600px;
+    color: #002366;
+}
+
+
+
+
+
+/* second carousel starting */
+
+.marraige_garden{
+    margin-left: 56rem;
+    width: 40%;
+    height: 50%;
+    max-width: 800px;
+    max-height: 600px;
+    display: flex;
+    transform-style: preserve-3d;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards{
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+.card{
+    position: absolute;
+    width: 45%;
+    height: 70%;
+    left: 0;
+    right: 0;
+    margin:auto;
+    padding-left: 1rem;
+    padding-top: 4rem;
+    cursor: pointer;
+    transition: transform 0.4s ease;   
+}
+
+
+img{
+    width: 95%;
+    height: 80%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+  
+#item-4:checked ~ .cards #song-6, #item-5:checked ~ .cards #song-4, #item-6:checked ~ .cards #song-5{
+    transform: translatex(-40%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}
+  
+#item-4:checked ~ .cards #song-5, #item-5:checked ~ .cards #song-6, #item-6:checked ~ .cards #song-4{
+    transform: translatex(40%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}
+  
+#item-4:checked ~ .cards #song-4, #item-5:checked ~ .cards #song-5, #item-6:checked ~ .cards #song-6{
+    transform: translatex(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+}
+  
+#item-4:checked ~ .cards #song-4 img, #item-5:checked ~ .cards #song-5 img, #item-6:checked ~ .cards #song-6 img{
+   box-shadow: 0px 0px 5px 0px rgba(81, 81, 0.47);
+}
+
+/* carousel  ending*/
+
+.marraigegarden_content{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    margin-left: 6rem;
+    margin-top: -29.6rem;
+    width: 60%;
+    height: 50%;
+    max-width: 800px;
+    max-height: 600px;
+    color: #002366;
+}
+
+.gif_center{
+    display: flex;
+}
+
+.gif_mid{
+    width: 8rem;
+    height: 8rem;
+    margin-left: 17rem;
+}
+
+.gif_para{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #002366;
+    text-decoration: none;
+    margin-left: 16rem;
+}
+
+
+
+.footer_class{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 7rem;
+}
+
+.footer_tag{
+    text-decoration: none;
+    font-weight: 900;
+    margin: 2.4rem;
+}
+
+.mainlogo_foot{
+    width: 16rem;
+    height: 13rem;
+}
+
+.footer_logos{
+    align-content: center;
+}
+
+.footer_para{
+    text-decoration: none;
+    font-weight: 900;
+    padding: 1rem;
+    color: #002366;
+}
+
+.foot_logo{
+    width: 2rem;
+    height: 2rem;
+    padding: 1rem;
+}
